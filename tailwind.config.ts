@@ -1,13 +1,9 @@
+// tailwind.config.ts
 import type { Config } from "tailwindcss";
-import tailwindcssAnimate from "tailwindcss-animate";
+import animate from "tailwindcss-animate";
 
 const config: Config = {
   darkMode: "class",
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
   theme: {
     extend: {
       colors: {
@@ -32,9 +28,16 @@ const config: Config = {
           500: '#efd3b7',
         },
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [
+    animate,
+  ],
 };
 
 export default config;
