@@ -7,7 +7,7 @@ export default function About() {
           About Us
         </h2>
         <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-          At VARDHAMAN CARPET, we are dedicated to providing high-quality foam and furnishings 
+          At Vardhaman Carpet, we are dedicated to providing high-quality foam and furnishings 
           that combine luxury with practicality. Our products are crafted with attention to detail, 
           ensuring durability and comfort.
         </p>
