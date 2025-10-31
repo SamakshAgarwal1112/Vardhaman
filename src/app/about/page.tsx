@@ -1,10 +1,8 @@
-// src/app/about/page.tsx
 'use client';
 
 import { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Award, Users, Heart, Target } from 'lucide-react';
 
 export default function AboutPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,29 +10,6 @@ export default function AboutPage() {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const values = [
-    {
-      icon: Award,
-      title: 'Quality Excellence',
-      description: 'We never compromise on the quality of our products, ensuring every piece meets the highest standards.'
-    },
-    {
-      icon: Users,
-      title: 'Customer First',
-      description: 'Your satisfaction is our priority. We listen, understand, and deliver exactly what you need.'
-    },
-    {
-      icon: Heart,
-      title: 'Crafted with Care',
-      description: 'Each product is made with attention to detail and a passion for perfection.'
-    },
-    {
-      icon: Target,
-      title: 'Innovation',
-      description: 'We constantly evolve, bringing you the latest designs and materials in home furnishing.'
-    }
-  ];
 
   const stats = [
     { number: '30+', label: 'Years Experience' },
